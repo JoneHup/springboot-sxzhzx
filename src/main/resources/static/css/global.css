@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/*重置*/
+body,h1,h2,h3,h4,h5,h6,hr,p,dl,dt,dd,ul,ol,li,form,button,input,textarea,th,td{margin:0; padding:0;}
+body,button,input,select,textarea{font:12px/1.5 "微软雅黑","宋体",tahoma,arial,simsun,sans-serif;}
+body{background-color:#fff; color:#333; font-family:"微软雅黑","宋体";}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+em{font-style:normal;}
+ul,ol{list-style:none;}
+a{color:#333; text-decoration:none; outline:none;}
+a:hover{text-decoration:none;}
+img{border:0;}
+button,input,select,textarea{font-size:100%;}
+table{border-collapse:collapse; border-spacing:0;}
+th{text-align:left;}
+
+
+/*浮动*/
+.left{float:left;}
+.right{float:right;}
+.clearfix:after{visibility: hidden; display: block; clear: both; height: 0; font-size: 0; content: ".";}
+.clearfix{zoom:1;}
+html,body{height:100%;}
+
+/*base style*/
+.red{color:#cc1414;}
+.hide{display:none;}
+.hidden{visibility: hidden;}
+.mr0{margin-right:0px !important;}
+.mb40{margin-bottom:40px !important;}
+.mr150{margin-right:150px !important;}
+.mb140{margin-bottom:140px !important;}
+.ml30{margin-left:30px !important;}
+.ml100{margin-left:100px !important;}
+
+@font-face {
+	font-family: 'Conv_AGENCYR';
+	src: url('../fonts/AGENCYR.eot');
+	src: url('../fonts/AGENCYR.eot') format('embedded-opentype'), url('../fonts/AGENCYR.woff') format('woff'), url('../fonts/AGENCYR.ttf') format('truetype'), url('../fonts/AGENCYR.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_AGENCYB';
+	src: url('../fonts/AGENCYB.eot');
+	src: url('../fonts/AGENCYB.eot') format('embedded-opentype'),url('../fonts/AGENCYB.woff') format('woff'), url('../fonts/AGENCYB.ttf') format('truetype'), url('../fonts/AGENCYB.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.facy{font-family:'Conv_AGENCYR',Sans-Serif;}
+.facyb{font-family:'Conv_AGENCYB',Sans-Serif;}

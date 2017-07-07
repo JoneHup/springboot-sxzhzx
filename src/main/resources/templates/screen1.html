@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META   HTTP-EQUIV="pragma"   CONTENT="no-cache"/>   
+<META   HTTP-EQUIV="Cache-Control"   CONTENT="no-cache,   must-revalidate"/>   
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>陕西互联网新闻信息监测指挥平台 - 首页</title>
+<link rel="stylesheet" href="/css/global.css" />
+<link rel="stylesheet" href="/css/style.css" />
+<script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/js/build/dist/echarts.js"></script>
+<script type="text/javascript" src="/js/jquery.windstagball.js"></script>
+<script type="text/javascript" src="/js/screen/common.js"></script>
+<script type="text/javascript" src="/js/screen/run.animateBackground.js"></script>
+<script type="text/javascript" src="/js/screen/screen1.js"></script>
+</head>
+
+<body class="index">
+	<!-- <input id="sysip" type="hidden" value="${baseUrl }"/> -->
+	<div class="container clearfix">
+		<div class="left section part-1 aside">
+			<h3><span class="titleText">关注舆情事件</span></h3>
+			<div class="secBd-top">
+				<span class="angle-lt"></span>
+				<span class="angle-rt"></span>
+				<span class="angle-lb"></span>
+				<span class="angle-rb"></span>
+				<div class="secBd-bottom">
+					<div class="secBd-center">
+						<div class="chartWrap">
+							<div class="j_caseSwitch caseSwitch">
+								<a href="javascript:;" class="left casePrev"></a>
+								<span class="left caseText"></span>
+								<a href="javascript:;" class="left caseNext"></a>
+							</div>
+							<h3 class="clearfix">
+								<span class="titleText">本周趋势</span>
+							</h3>
+							<div id="emphasisCase" class="chart"></div>
+						</div>
+						<div class="listWrap">
+							<h3 class="clearfix">
+								<span class="left title" id="eventTotal"></span>
+								<a href="/screen3/index" class="right link">查看全部</a>
+							</h3>
+							<ul id="attCaseList" class="caseList">
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="left section part-2">
+			<div class="partTopBg">
+				<div class="secBd wholeCountry mb40">
+					<span class="angle-lt bigAngle"></span>
+					<span class="angle-rt"></span>
+					<span class="angle-lb"></span>
+					<span class="angle-rb"></span>
+					<h3><span class="titleText">全国热点云</span></h3>
+					<div class="secBd-bottom">
+						<div class="secBd-center">
+							<div id="wholeCouHotWord" class="cloudWord">
+								<!-- <s:iterator value="countryHotClouds" var="hotC">
+									<a  href="#" value="<s:property value='#hotC.url'/>" ><s:property value="#hotC.name"/></a>
+								</s:iterator> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="secBd hotRank">
+					<span class="angle-lt"></span>
+					<span class="angle-rt"></span>
+					<span class="angle-lb"></span>
+					<span class="angle-rb"></span>
+					<h3><span class="titleText">本省热点排行榜</span></h3>
+					<div class="secBd-bottom">
+						<div class="secBd-center">
+							<ul class="hotRankList" id="provinceHotRanking">
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="left sectionDow part-3">
+			<div class="bigTitle">
+				<h2><a style="color: #fff; line-height: 150px" href="/screen1/index">陕西省互联网舆情监测指挥调控平台</a></h2>
+				<div id="shanxiProvince" class="secBd clearfix">
+					<div id="dataMap" class="right chartMap"></div>
+					<div id="platformSum" class="dataInfo">
+					</div>
+					<div id="orderCountData" class="dataInfo reviewInfo">
+					</div>
+					<div id="countData" class="dataInfo reviewInfoCount">
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="left section part-4">
+			<div class="partTopBg">
+				<div class="secBd wechart mb40">
+					<span class="angle-lt"></span>
+					<span class="angle-rt bigAngle"></span>
+					<span class="angle-lb"></span>
+					<span class="angle-rb"></span>
+					<h3><span class="titleText">微信热点云</span></h3>
+					<div class="secBd-bottom">
+						<div class="secBd-center">
+							<div id="wechatHotWord" class="cloudWord">
+								<!-- <s:iterator value="wechatHotClouds" var="wechatHotCloud">
+									<a href="#" value="<s:property value='#wechatHotCloud.url'/>"><s:property value="#wechatHotCloud.name"/></a>
+								</s:iterator> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="secBd hotRank micBlog">
+					<span class="angle-lt"></span>
+					<span class="angle-rt"></span>
+					<span class="angle-lb"></span>
+					<span class="angle-rb"></span>
+					<h3><span class="titleText">全国新闻热点排行榜</span></h3>
+					<div class="secBd-bottom">
+						<div class="secBd-center">
+							<ul class="hotRankList" id="weiboHotRanking">
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="left section aside part-5">
+			<h3><span class="titleText">关注敏感信息</span></h3>
+			<div class="secBd-top">
+				<span class="angle-lt"></span>
+				<span class="angle-rt"></span>
+				<span class="angle-lb"></span>
+				<span class="angle-rb"></span>
+				<div class="secBd-bottom">
+					<div class="secBd-center">
+						<div class="j_sISwitch switchWrap">
+							<a href="javascript:;" class="switch-left"></a>
+							<a href="javascript:;" class="switch-right"></a>
+							<a href="javascript:;" class="tab tab1 cur">新闻</a>
+							<a href="javascript:;" class="tab tab2">微博</a>
+							<a href="javascript:;" class="tab tab3">微信</a>
+							<a href="javascript:;" class="tab tab4">论坛</a>
+							<a href="javascript:;" class="tab tab5">移动端</a>
+							<a href="javascript:;" class="tab tab6">境外</a>
+							<a href="javascript:;" class="tab tab7">博客</a>
+							<a href="javascript:;" class="tab tab8">纸媒</a>
+						</div>
+						<div class="j_switchConts switchContWrap">
+							<div class="switchCont">
+								<div class="chartWrap">
+									<h3 class="">
+										<span class="subTitle">本周趋势</span>
+									</h3>
+									<div id="senInfo_id" class="chart"></div>
+								</div>
+								<div class="listWrap">
+									<h3 class="clearfix">
+										<span class="left title" id="sensitiveTotal"></span>
+										<a href="/screen4/index" class="right link">查看全部</a>
+									</h3>
+									<ul class="caseList hotRankList" id="sensitiveList">
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	 <!--==============================================我是分割线=====================================================-->
+     <!--网页信息弹窗-->
+    <div class="pageInfo">
+    	<div class="pageInfoHd clearfix"><h3>网页信息</h3><a href="#" class="right closePageInfo"></a></div>
+        <div class="pageInfoBd">
+        	<iframe  id="iframe" frameborder="0" width="100%" height="100%" style="background-color:#fff;" src="" />
+        </div>
+    </div>
+</body>
+</html>
